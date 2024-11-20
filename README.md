@@ -33,6 +33,29 @@ local Window = redzlib:MakeWindow({
   }
 })
 ```
+## key system
+```lua
+MakeWindow({
+  Hub = {
+    Title = "title ",
+    Animation = "by : redz"
+  },
+    Key = {
+    KeySystem = False,
+    Title = "Key system",
+    Description = "descricao",
+    KeyLink = "Link",
+    Keys = {"hello123"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "iniciando o script...",
+      Incorrectkey = "A key esta incorreta",
+      CopyKeyLink = "Copiado para a Clipboard"
+    }
+  }
+})
+```
+
 Window Finctions
 ```lua
 --[[
@@ -43,7 +66,17 @@ Window Finctions
   Window:Set(0) - number or Color3
 ]]
 ```
-
+## Minimize button
+```lua
+MinimizeButton({
+  Image = "rbxassetid://00000000",
+  Size = {32, 32},
+  Color = Color3.fromRGB(0, 0, 0),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 255, 255)
+})
+```
 ## Make Tab
 
 Add a Scroll Tab
